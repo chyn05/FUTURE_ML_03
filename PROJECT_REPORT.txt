@@ -1,0 +1,16 @@
+
+PROJECT: CUSTOMER SUPPORT CHATBOT
+
+Objective:
+Automate customer support using a chatbot.
+
+Tools:
+Python, Flask, SQLite, HTML
+
+Advantages:
+- 24/7 support
+- Reduced cost
+- Faster responses
+
+Outcome:
+A working chatbot for customer queries.

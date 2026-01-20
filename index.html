@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Support Chatbot</title>
+</head>
+<body>
+<h2>Customer Support Chatbot</h2>
+<input id="msg" placeholder="Type message">
+<button onclick="send()">Send</button>
+<p id="chat"></p>
+<script>
+function send(){
+ fetch("/chat",{
+  method:"POST",
+  headers:{"Content-Type":"application/json"},
+  body:JSON.stringify({message:document.getElementById("msg").value})
+ }).then(r=>r.json()).then(d=>{
+  document.getElementById("chat").innerHTML += "<br><b>You:</b> "+msg.value+"<br><b>Bot:</b> "+d.reply;
+ });
+}
+</script>
+</body>
+</html>
